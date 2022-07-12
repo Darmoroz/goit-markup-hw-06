@@ -440,15 +440,15 @@
 				</div>
       </div>
     </footer>
-     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
           <svg class="icon-close">
             <use href="./images/sprite.svg#icon-modal-close"></use>
           </svg>
         </button>
-				<p>Оставьте свои данные, мы вам перезвоним</p>
-				<form class="js-speaker-form">
+				<p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+				<form class="js-speaker-form form-port">
 					<div class="form-field-port">
 						<label for="user-name">Имя</label>
 						<div class="svg-form">
@@ -475,12 +475,11 @@
 					</div>
 					<div class="form-field-port">
 						<label for="user-commit">Комментарий</label>
-						<div class="svg-form">
-							<textarea name="user-commit" id="user-commit" placeholder="Введите текст"></textarea>
-					</div>
+						<textarea name="user-commit" id="user-commit" placeholder="Введите текст"></textarea>
+					</div>	
 					<div class="form-field-port">
 						<input type="checkbox" name="rules" id="rules" />
-						<label for="rules">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+						<label for="rules">Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a></label>
 					</div>
 					<button type="submit" class="btn">Отправить</button>
 				</form>
