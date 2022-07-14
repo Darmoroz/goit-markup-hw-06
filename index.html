@@ -448,38 +448,46 @@
           </svg>
         </button>
 				<p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-				<form class="js-speaker-form form-port">
+				<form class="form-port">
 					<div class="form-field-port">
 						<label for="user-name">Имя</label>
 						<div class="svg-form">
-							<svg width="18" height="18">
+							<svg class="form-svg" width="18" height="18">
 								<use href="./images/sprite.svg#icon-form-person"></use>
 							</svg>
-						<input type="text" name="user-name" id="user-name"></div>
+							<input type="text" name="user-name" id="user-name">
+					</div>
 					</div>
 					<div class="form-field-port">
 						<label for="user-phone">Телефон</label>
 						<div class="svg-form">
-							<svg width="18" height="18">
+							<svg class="form-svg" width="18" height="18">
 								<use href="./images/sprite.svg#icon-form-phone"></use>
 							</svg>
-						<input type="tel" name="user-phone" id="user-phone"></div>
+							<input type="tel" name="user-phone" id="user-phone">
+					</div>
 					</div>
 					<div class="form-field-port">
 						<label for="user-email">Почта</label>
 						<div class="svg-form">
-							<svg width="18" height="18">
+							<svg class="form-svg" width="18" height="18">
 								<use href="./images/sprite.svg#icon-form-email"></use>
 							</svg>
-						<input type="email" name="user-email" id="user-email"></div>
+							<input type="email" name="user-email" id="user-email">
+					</div>
 					</div>
 					<div class="form-field-port">
 						<label for="user-commit">Комментарий</label>
 						<textarea name="user-commit" id="user-commit" placeholder="Введите текст"></textarea>
 					</div>	
 					<div class="form-field-port">
-						<input type="checkbox" name="rules" id="rules" />
-						<label for="rules">Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a></label>
+						<label class="form-rules">
+							<input type="checkbox" name="rules" value="yes"/>
+							<svg class="rect" width="16" height="15"><use href="./images/sprite.svg#icon-form-check-rect"></use>
+							</svg>
+							<svg class="check" width="16" height="15"><use href="./images/sprite.svg#icon-form-check"></use>
+							</svg>Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a>
+						</label>
 					</div>
 					<button type="submit" class="btn">Отправить</button>
 				</form>
